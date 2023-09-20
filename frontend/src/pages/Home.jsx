@@ -27,7 +27,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="p-4">
+    <div  className="p-5 bg-blue-100 min-h-screen font-mono">
       <div className="flex justify-center items-center gap-x-6">
         <button
             className="bg-sky-300 items-center hover:bg-sky-600 px-4  py-1 rounded-lg"
@@ -42,8 +42,8 @@ const Home = () => {
             Card
         </button>
        </div>
-      <div className="flex justify-between items-center">
-        <h1 className="text-3xl my-8"> Books List</h1>
+      <div className="flex justify-between items-center ">
+        <h1 className="text-3xl my-8 text-sky-950 font-bold font-mono "> Books List</h1>
         <Link to="/books/create">
           <MdOutlineAddBox className="text-sky-800 text-4xl" />
         </Link>

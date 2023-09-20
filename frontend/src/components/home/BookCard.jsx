@@ -5,7 +5,7 @@ import BookSingleCard from './BookSingleCard'
 
 const BookCard = ({ books }) => {
   return (
-    <div className="grid sm:grid-cols-2 lg:gird-cols-3 xl:grid-cols-4">
+    <div className="grid sm:grid-cols-2 lg:gird-cols-3 xl:grid-cols-4 text-sky-950">
       {books.map((item) => (
         <BookSingleCard key={item._id} book={item} />
       ))}

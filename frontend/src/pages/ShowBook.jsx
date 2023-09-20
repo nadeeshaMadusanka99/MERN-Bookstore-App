@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import {useParams} from 'react-router-dom';
@@ -26,13 +27,13 @@ const ShowBook = () => {
         
 
   return (
-    <div className='p-4'>
+    <div className='p-4 bg-lime-100 min-h-screen font-mono '>
       <BackButton />
-      <h1 className='text-3xl my-8'>Show Book</h1>
+      <h1 className='text-3xl my-8 text-center'>Show Book</h1>
       {loading ? (
         <Spinner />
       ) : (
-        <div className='flex flex-col border-2 border-sky-400 rounded-xl w-fit p-4'>
+        <div className='flex flex-col border-2 border-lime-400 rounded-xl w-fit p-4 mx-auto'>
 
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Id</span>
